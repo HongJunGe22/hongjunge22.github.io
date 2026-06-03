@@ -1,6 +1,6 @@
 # Boris-style minimal academic homepage
 
-这是一个接近 Boris Bukh 风格的极简数学个人主页模板：
+这是一个极简数学个人主页模板：
 
 - 纯 HTML/CSS
 - 无 JavaScript
