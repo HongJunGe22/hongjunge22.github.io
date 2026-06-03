@@ -1,4 +1,4 @@
-# Boris-style minimal academic homepage
+# Minimal academic homepage
 
 这是一个极简数学个人主页模板：
 
