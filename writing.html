@@ -3,15 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mathematical writings — Your Name</title>
-  <meta name="description" content="Mathematical writings, preprints, and publications by Your Name.">
-  <meta name="author" content="Your Name">
+  <title>Mathematical writings — Hong-Jun Ge</title>
+  <meta name="description" content="Mathematical writings, preprints, and publications by Hong-Jun Ge.">
+  <meta name="author" content="Hong-Jun Ge">
   <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="https://yourname.com/writing.html">
+  <link rel="canonical" href="https://hongjunge22.github.io/writing.html">
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
 </head>
 <body>
   <header class="site-header">
-    <h1 class="site-title"><a href="index.html">Your Name</a></h1>
+    <h1 class="site-title"><a href="index.html">Hong-Jun Ge (葛洪君)</a></h1>
     <p class="subtitle">Mathematical writings</p>
 
     <nav aria-label="Main navigation">
@@ -33,60 +48,112 @@
     <h2>Preprints</h2>
 
     <article class="paper">
-      <h3><span class="paper-title">Title of your preprint</span></h3>
-      <p class="paper-meta">with Coauthor One and Coauthor Two.</p>
+      <h3><span class="paper-title">Kusner's conjecture: Exact values and linear bounds</span></h3>
+      <p class="paper-meta">with Zixiang Xu and Yang Zhou.</p>
       <p class="paper-summary">
-        One or two sentences explaining the main result in plain mathematical language.
-        This is useful both for readers and for search engines.
+  In 1983, Kusner conjectured that the largest equilateral set in
+  \(\mathbb{R}^{n}\) with metric \(\ell_{p}\) has cardinality \(n+1\)
+  when \(1\lt p\lt\infty\) and \(2n\) when \(p=1\).
+  This conjecture was proved only in the isolated cases \(p=2\) and \(p=4\),
+  and was disproved when \(1\lt p\lt 2\). The best general upper bound
+  \(O_p(n^{\frac{2p+2}{2p-1}})\) is due to the celebrated work of
+  Alon and Pudlák, GAFA, 2003. Our main contributions include:
+</p>
+
+<ol class="compact-list">
+  <li>
+    We prove Kusner's conjecture for every dimension \(n\ge 1\) when
+    \(2\le p\le 4\). More generally, for every integer \(k\ge 0\)
+    and every \(p\in[4k+2,4k+4]\), every equilateral set in
+    \(\mathbb{R}^{n}\) with metric \(\ell_p\) has cardinality at most
+    \((2k+1)n+1\). On the complementary intervals
+    \(p\in(4k,4k+2)\) with \(p\ge 1\), we obtain the almost linear bound
+    \(O_p(n\log n)\).
+  </li>
+  <li>
+    We also consider the analogous problem on the torus \(\mathbb{T}^n\),
+    recently initiated by Alon, where the cyclic distance makes the problem
+    substantially more delicate than in \(\mathbb{R}^n\). We prove the almost
+    linear bound \(O_p(n\log n)\) for \(1\le p\le 2\) and
+    \(O_p(n^{\frac{3}{2}-\frac{1}{p}})\) for every fixed real \(p\gt 2\),
+    improving Alon's bounds \(O_p(n^{2+\frac{2}{\lfloor p\rfloor}})\)
+    for all finite \(p\ge 1\).
+  </li>
+</ol>
       </p>
       <p class="paper-meta">Preprint, 2026.</p>
       <p class="paper-links">
-        <a href="#">pdf</a>
-        <a href="https://arxiv.org/">arXiv</a>
-        <a href="#">talk</a>
+        <a href="papers/2606.03987v1.pdf">pdf</a>
       </p>
     </article>
 
-    <article class="paper">
-      <h3><span class="paper-title">Another title of your preprint</span></h3>
-      <p class="paper-meta">with Coauthor Name.</p>
-      <p class="paper-summary">
-        A short summary of the problem, the result, and the method.
-      </p>
-      <p class="paper-meta">Manuscript in preparation.</p>
-      <p class="paper-links">
-        <a href="#">pdf</a>
-      </p>
-    </article>
+
 
     <h2>Publications</h2>
 
     <article class="paper">
-      <h3><span class="paper-title">Title of your published paper</span></h3>
-      <p class="paper-meta">with Coauthor Name.</p>
+      <h3><span class="paper-title">A \(2\)-distance set with \(277\) points in the Euclidean space of dimension \(23\)</span></h3>
+      <p class="paper-meta">with Jack H. Koolen and Akihiro Munemasa.</p>
       <p class="paper-summary">
-        A brief summary of the main theorem or contribution.
+       We construct a \(2\)-distance set with \(277\) points in the
+  \(23\)-dimensional Euclidean space \(\mathbb{R}^{23}\), whose pairwise
+  distances between distinct points are \(2\) and \(\sqrt{6}\).
       </p>
       <p class="paper-meta">
-        Appeared in <em>Journal Name</em>, volume(issue), pages, year.
+        Appeared in <em>Discrete & Computational Geometry</em>, 2026
       </p>
       <p class="paper-links">
-        <a href="#">pdf</a>
-        <a href="#">doi</a>
-        <a href="https://arxiv.org/">arXiv</a>
+        <a href="papers/2504.18110v3.pdf">pdf</a>
       </p>
     </article>
 
-    <h2>Notes and slides</h2>
-
     <article class="paper">
-      <h3><span class="paper-title">Title of a note or talk</span></h3>
+      <h3><span class="paper-title">On co-edge-regular graphs with 4 distinct eigenvalues</span></h3>
+      <p class="paper-meta">with Jack H. Koolen.</p>
       <p class="paper-summary">
-        A short description of the note or talk.
+       Tan, Koolen, and Xia conjectured that connected co-edge-regular graphs with four distinct eigenvalues and fixed smallest eigenvalue, 
+        when having sufficiently large valency, belong to two different families of graphs.
+        In this paper we construct two new infinite families of connected co-edge-regular graphs with four distinct eigenvalues and fixed smallest eigenvalue, 
+        thereby disproving their conjecture. 
+        Moreover, one of these constructions demonstrates that clique-extensions of Latin Square graphs are not determined by their spectrum. 
+      </p>
+      <p class="paper-meta">
+        Appeared in <em>Electronic Journal of Combinatorics</em> Volume 32, Issue 3, 2025
       </p>
       <p class="paper-links">
-        <a href="#">note</a>
-        <a href="#">slides</a>
+        <a href="papers/2503.12025v1.pdf">pdf</a>
+      </p>
+    </article>
+  </main>
+
+  
+    <article class="paper">
+      <h3><span class="paper-title">A Bose-Laskar-Hoffman theory for \(\mu\)-bounded graphs with fixed smallest eigenvalue</span></h3>
+      <p class="paper-meta">with Jack H. Koolen and Chenhui Lv and Qianqian Yang.</p>
+      <p class="paper-summary">
+  In 2018, using Ramsey theory and Hoffman theory, Koolen, Yang, and Yang
+  obtained a structural result on graphs with smallest eigenvalue at least
+  \(-3\) and sufficiently large minimum degree. In this paper, we take a
+  different route: instead of using Ramsey theory, we combine a
+  Bose&ndash;Laskar type argument with Hoffman theory to obtain structural
+  information on \(\mu\)-bounded graphs with fixed smallest eigenvalue.
+  Our method gives a concrete lower bound on the minimum degree under which
+  the structural conclusion holds.
+</p>
+
+<p class="paper-summary">
+  Since local graphs of distance-regular graphs are \(\mu\)-bounded, we apply
+  these results to local graphs of distance-regular graphs with classical
+  parameters \((D,b,\alpha,\beta)\). As consequences, we show that
+  \(\alpha\) is bounded above by a cubic polynomial in \(b\) whenever
+  \(D\ge 9\) and \(b\ge 2\), and that \(\alpha\le 2\) when \(b=2\) and
+  \(D\ge 12\).
+</p>
+      <p class="paper-meta">
+        Appeared in <em>European Journal of Combinatorics</em> Volume 136, 2026
+      </p>
+      <p class="paper-links">
+        <a href="papers/2503.12025v1.pdf">pdf</a>
       </p>
     </article>
   </main>
