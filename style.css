@@ -13,8 +13,8 @@
   --background: #fff;
 
   /* Paper title colors */
---paper-title: #004c99;
---paper-title-hover: #0066cc;
+--paper-title: #0055aa;
+--paper-title-hover: #0070cc;
 }
 
 html {
