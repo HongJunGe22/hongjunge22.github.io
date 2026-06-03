@@ -11,6 +11,10 @@
   --link: #0645ad;
   --visited: #5a3696;
   --background: #fff;
+
+  /* Paper title colors */
+  --paper-title: #003366;
+  --paper-title-hover: #0645ad;
 }
 
 html {
@@ -114,12 +118,38 @@ main {
   color: var(--muted);
 }
 
+/* Paper entries */
 .paper {
   margin: 1.1rem 0 1.4rem 0;
 }
 
+/* A light separator between consecutive papers. */
+.paper + .paper {
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+}
+
+/* Paper title. */
 .paper-title {
   font-style: italic;
+  color: var(--paper-title);
+}
+
+/* Clickable paper titles. Used when the title itself links to the PDF. */
+.paper-title-link,
+.paper-title-link:visited {
+  color: var(--paper-title);
+  text-decoration: none;
+}
+
+.paper-title-link:hover,
+.paper-title-link:focus {
+  color: var(--paper-title-hover);
+  text-decoration: underline;
+}
+
+.paper-title-link .paper-title {
+  color: inherit;
 }
 
 /* Links such as [pdf], [arXiv], [doi] placed next to a paper title. */
@@ -133,6 +163,10 @@ main {
 
 .paper-title-links a {
   text-decoration: none;
+}
+
+.paper-title-links a:visited {
+  color: var(--link);
 }
 
 .paper-title-links a:hover,
