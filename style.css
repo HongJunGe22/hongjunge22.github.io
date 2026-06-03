@@ -122,6 +122,25 @@ main {
   font-style: italic;
 }
 
+/* Links such as [pdf], [arXiv], [doi] placed next to a paper title. */
+.paper-title-links {
+  font-size: 0.75em;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 0.45em;
+  white-space: nowrap;
+}
+
+.paper-title-links a {
+  text-decoration: none;
+}
+
+.paper-title-links a:hover,
+.paper-title-links a:focus {
+  text-decoration: underline;
+}
+
+/* Old-style paper links, kept for compatibility in case some papers still use them. */
 .paper-meta,
 .paper-links {
   margin: 0.3rem 0;
@@ -135,8 +154,25 @@ main {
   margin-right: 0.55rem;
 }
 
+/* Make numbered lists inside paper summaries slightly more compact. */
+.paper ol.compact-list {
+  margin-top: 0.35rem;
+  margin-bottom: 0.7rem;
+  padding-left: 1.8rem;
+}
+
+.paper ol.compact-list li {
+  margin: 0.35rem 0;
+}
+
 .compact-list li {
   margin: 0.35rem 0;
+}
+
+/* Optional: use this if you write your name as Hongjun Ge <span class="chinese-name">(葛...)</span>. */
+.chinese-name {
+  font-weight: normal;
+  font-size: 0.9em;
 }
 
 footer {
