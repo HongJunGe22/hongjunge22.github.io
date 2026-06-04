@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hongjunge22.github.io/sitemap.xml
+Sitemap: https://hongjunge.org/sitemap.xml
 
 # After you know your final domain, you may add a sitemap line such as:
 # Sitemap: https://yourname.com/sitemap.xml
